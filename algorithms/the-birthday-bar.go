@@ -16,9 +16,9 @@ func main() {
 	fmt.Scanf("%d\n", &m)
 
 	count := 0
-	for i := 0; i < size - m + 1; i++ {
+	for i := 0; i < size-m+1; i++ {
 		sum := 0
-		for j := i; j < i + m; j++ {
+		for j := i; j < i+m; j++ {
 			sum += bar[j]
 		}
 		if sum == d {

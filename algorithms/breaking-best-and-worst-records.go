@@ -17,15 +17,14 @@ func main() {
 	for i := 1; i < size; i++ {
 		fmt.Scanf("%d", &score)
 		if score > best {
-			best = score;
+			best = score
 			brokeBest++
 		}
 		if score < worst {
-			worst = score;
+			worst = score
 			brokeWorst++
 		}
 	}
 
 	fmt.Printf("%d %d", brokeBest, brokeWorst)
 }
-
