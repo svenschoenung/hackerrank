@@ -4,7 +4,7 @@ import "fmt"
 import "strconv"
 
 func reversed(x int) int {
-	str := strconv.Itoa(x);
+	str := strconv.Itoa(x)
 	chars := make([]rune, len(str))
 	for i, char := range str {
 		chars[len(str)-1-i] = char
@@ -18,8 +18,8 @@ func main() {
 	fmt.Scanf("%d %d %d\n", &i, &j, &k)
 
 	count := 0
-        for n := i; n <= j; n++ {
-		if (n - reversed(n)) % k == 0 {
+	for n := i; n <= j; n++ {
+		if (n-reversed(n))%k == 0 {
 			count++
 		}
 	}

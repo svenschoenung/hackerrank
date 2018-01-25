@@ -6,7 +6,7 @@ func main() {
 	var n int
 	fmt.Scanf("%d\n", &n)
 
-	inv_p := make([]int, n + 1)
+	inv_p := make([]int, n+1)
 	for x := 1; x <= n; x++ {
 		var px int
 		fmt.Scanf("%d", &px)
