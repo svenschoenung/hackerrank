@@ -17,5 +17,5 @@ func main() {
 		}
 	}
 
-	fmt.Printf("%d\n", n - max)
+	fmt.Printf("%d\n", n-max)
 }

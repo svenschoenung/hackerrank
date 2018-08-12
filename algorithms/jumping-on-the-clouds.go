@@ -13,11 +13,11 @@ func main() {
 
 	jumps := 0
 	i := 0
-	for ; i < n - 1; {
-		if i + 2 < n && clouds[i + 2] == 0 {
+	for i < n-1 {
+		if i+2 < n && clouds[i+2] == 0 {
 			i += 2
 			jumps++
-		} else if i + 1 < n && clouds[i + 1] == 0 {
+		} else if i+1 < n && clouds[i+1] == 0 {
 			i += 1
 			jumps++
 		}

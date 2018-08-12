@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-
 func main() {
 	var n int
 	fmt.Scanf("%d\n", &n)
@@ -17,7 +16,7 @@ func main() {
 	for i := 0; i < n; i++ {
 		for j := i + 1; j < n; j++ {
 			if arr[i] == arr[j] {
-				if j - i < min {
+				if j-i < min {
 					min = j - i
 					result = min
 				}

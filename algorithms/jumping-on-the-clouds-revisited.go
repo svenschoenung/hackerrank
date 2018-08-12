@@ -14,7 +14,7 @@ func main() {
 	e := 100
 	i := 0
 	jumps := 0
-	for ; i != 0 || jumps == 0 ; {
+	for i != 0 || jumps == 0 {
 		i = (i + k) % n
 		e -= 1
 		if clouds[i] == 1 {
